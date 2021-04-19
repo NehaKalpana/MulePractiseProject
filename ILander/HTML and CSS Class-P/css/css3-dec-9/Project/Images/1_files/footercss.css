@@ -1,0 +1,112 @@
+.foot{ 
+	   background-color: black;
+	   color: white;
+	   	  border:1px solid;
+}
+.foot1{
+		background-color:#042E6F;				
+}
+h6{
+	color:#fff;
+}
+.FBG{	
+	border: 1px solid #dddddd;
+		
+		    margin: 50px 10px 33px 0;
+			
+}
+		
+ul li{
+	list-style-type:none;
+}
+#menu li a{	
+	color:#fff;
+	text-decoration:none;
+}
+.footerbg
+{
+	background-color:#042e6f;
+	border-top:5px solid #a1b0b7;
+}
+.footerbg1
+{
+	background-color:#c0bfc5;
+}
+.card
+{
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 2px solid #a1b0b7;
+	border-radius: .25rem;
+}
+.simg
+{	
+	margin-top:-70px;
+}
+.simg1
+{
+	width:100%;
+	margin-top:-170px;
+}
+.stcard
+{
+	max-width:400px;
+	background-color:#042e6f;
+}
+.stcardb
+{
+	background-color:#a1b0b7;
+}
+.cardh
+{
+	height:43px;
+}
+
+*:before, *:after {  
+    box-sizing: border-box;
+}
+@media (max-width:480px)
+{
+	.dimg
+	{
+		display: none;
+	}
+}
+.fsize
+{
+	font-size:13px;
+}
+.fiborder
+{
+	border: 1px solid #fff !important;
+	color:#fff !important;
+}
+.fiborder1
+{
+	border: 1px solid #fff !important;
+	color:#fff !important;
+	
+}
+.pad
+{
+	padding:5px 10px !important;
+}
+.page-header:after {
+    background-color: #00baf2;
+    top: 42px;
+    box-shadow: 7px 0 0 #ccc;
+    content: "";
+    display: block;
+    height: 2px;
+    left:0;
+    margin: 0;
+    position: absolute;
+    width: 55px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<body>
+	<h1 id="msg">ILander Technologies Private Limited</h1>
+	
+	<button id="cbtn">Click</button>
+	<button id="dbtn">dbclick</button><br><br>
+	<div id="div1" style="background:hotpink;width:200px;height:100px;"></div><br>
+	
+
+	<h2 id="msg1">Website Designing</h2>
+	<p>Does your website have what it takes to catch the attention of a visitor? Is it user friendly in terms of navigation?</p>
+	Full Name: <input id="fname" type="text"  placeholder="Enter Your Name">
+	email-id:	<input id="email" type="text" placeholder="Enter your Mailid">
+	
+	<script>
+		$(document).ready(function(){
+				alert("page is load");
+		
+			//Mouse Events
+			$("#cbtn").click(function(){			
+				$("#msg").html("ILTCS").css("color","blue");
+			});
+			
+			$("#dbtn").dblclick(function(){			
+				$("#msg").html("Software company").css("color","red");
+			});
+			
+			$("#div1").mouseenter(function()
+			{
+					$("#div1").css("background-color","orange");
+			});
+		
+			
+			$("#div1").mouseleave(function()
+			{
+					$("#div1").css("background-color","green");
+			});
+			
+			//Keyboard Events
+			
+			$("#fname").keyup(function()
+			{
+				alert("key is up");
+				
+			});
+			
+			$("#email").keydown(function()
+			{
+				alert("key is down");
+				
+			});
+			
+			
+			
+			
+			
+		});
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ILander Technologies</title>
+</head>
+<body>
+	<p id="msg"></p>
+	<p id="msg1"></p>
+	<p id="msg2"></p>
+	<p id="msg3"></p>
+	<p id="msg4"></p>
+	<script>
+		var x = 123;
+		var y = 9.656;
+		var z= 8.7468;
+		var p= 7.3452;
+		document.getElementById("msg").innerHTML=x.toString() + (223).toString() + (200 + 23 ).toString();
+		document.getElementById("msg1").innerHTML=y.toExponential() + "<br>" + y.toExponential(2) + "<br>" + y.toExponential
+		 (4) + "<br>" + y.toExponential(6);
+		document.getElementById("msg2").innerHTML=z.toFixed(0) + "<br>" + z.toFixed(2)+ "<br>" + z.toFixed(4) +"<br>"+ z.toFixed(6);
+		document.getElementById("msg3").innerHTML=p.toPrecision() + "<br>" + p.toPrecision(2) + "<br>" + p.toPrecision(4) + "<br>" + p.toPrecision(6);
+	
+
+	</script>
+</body>
+</html>

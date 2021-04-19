@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body >
+<p id="msg"></p>
+<p id="msg1"></p>
+	<button onclick="randommethods()">Click</button>
+	<script>
+		function randommethods()
+		{
+			document.getElementById("msg").innerHTML=Math.floor(Math.random()*10);//0-9
+			document.getElementById("msg1").innerHTML=Math.floor(Math.random()*1000);//0-1000
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-lg-1">
+		<div>
+			<img id="img1" src="shoe.jpeg" style="width:100px;height:100px" class="img-fluid" onmouseenter="hover()"  onmouseleave="hoverleave()">
+		</div>
+		<div>
+		<img  id="img2" src="shoe2.jpeg" class="img-fluid"  style="width:100px;height:100px" onmouseenter="hover1()"  onmouseleave="hoverleave1()">
+		</div>
+		<div>
+			<img  id="img3" src="shoe3.jpeg"  style="width:100px;height:100px" class="img-fluid"onmouseenter="hover2()"  onmouseleave="hoverleave2()">
+		</div>
+		<div>
+			<img id="img4" src="shoe4.jpeg"  style="width:100px;height:100px" class="img-fluid" onmouseenter="hover3()"  onmouseleave="hoverleave3()">
+		</div>
+		<div>
+			<img id="img5" src="shoe5.jpeg"class="img-fluid"  style="width:100px;height:100px" onmouseenter="hover4()"  onmouseleave="hoverleave4()">
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div>
+		<img id="img" src="shoe.jpeg" class="img-fluid" style="height:500px;width:500px">
+		</div>	
+	</div>
+</div>
+</div>
+<script>
+function hover(){
+			document.getElementById("img1").style.border="1px solid blue";
+			document.getElementById("img").src="shoe.jpeg"
+		
+		
+		}
+function hoverleave(){
+			document.getElementById("img1").style.border="none";
+			document.getElementById("img1").src="shoe.jpeg"
+		}
+function hover1(){
+			document.getElementById("img2").style.border="1px solid blue";
+			document.getElementById("img").src="shoe2.jpeg"
+		
+		}
+		function hoverleave1(){
+			document.getElementById("img2").style.border="none";
+			document.getElementById("img1").src="shoe.jpeg"
+		}
+function hover2(){
+			document.getElementById("img3").style.border="1px solid blue";
+			document.getElementById("img").src="shoe3.jpeg"
+		}
+function hoverleave2(){
+			document.getElementById("img3").style.border="none";
+			document.getElementById("img1").src="shoe.jpeg"
+		}
+function hover3(){
+			document.getElementById("img4").style.border="1px solid blue";
+			document.getElementById("img").src="shoe4.jpeg"
+		}
+function hoverleave3(){
+			document.getElementById("img4").style.border="none";
+			document.getElementById("img1").src="shoe.jpeg"
+		}
+function hover4(){
+			document.getElementById("img5").style.border="1px solid blue";
+			document.getElementById("img").src="shoe5.jpeg"
+		}
+function hoverleave4(){
+			document.getElementById("img5").style.border="none";
+			document.getElementById("img1").src="shoe.jpeg"
+		}
+
+</script>
+</body>
+</html>

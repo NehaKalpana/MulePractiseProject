@@ -1,0 +1,36 @@
+<script>
+var array=['Real Time Trainers','1 On 1 Training','100% Job Assistance','Personal Training','Practical Guidance','No Class Room Training'];
+//var kal=Array('Real Time Trainers','1 On 1 Training','100% Job Assistance','Personal Training','Practical Guidance');
+
+console.log(array[0]);
+console.log(array[5]);
+array.push('Resume Preparation');
+console.log(array);
+array.pop();
+console.log(array);
+
+array.unshift('Resume Preparation');
+console.log(array);
+array.shift();
+console.log(array);
+
+console.log(array.sort());
+console.log(array.reverse());
+
+var array=['Real Time Trainers','1 On 1 Training','100% Job As""sistance','Personal Training', 'Practical Guidance'];
+array.splice(2,1,"Live Project Training");
+console.log(array);
+
+delete array[3];
+console.log(array);
+array[3]="jgdjchdgd";
+console.log(array);
+
+for (var i=1;i<array.length; i++)
+{
+console.log(array[i-1]);
+}
+
+
+
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<button onclick="numberMethods()">Click</button>
+	<p id="msg"></p>
+	<script>
+		function numberMethods()
+		{
+			var date=new Date();
+			//var c=toLocaleTimeString(date);
+			//var c=date.toLocaleTimeString();
+			//console.log(c);
+			var localtime=setInterval(mytime,300);
+			function mytime(){
+				var date=new Date();
+				document.getElementById("msg").innerHTML=date.toLocaleTimeString();
+			}
+		}
+	</script>
+</body>
+</html>
+

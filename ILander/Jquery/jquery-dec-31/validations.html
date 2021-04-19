@@ -1,0 +1,77 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+$(document).ready(function()
+{
+	$("#msg").submit(function(e){
+		e.preventDefault();
+		var fn=$("#fname").val();
+		var ln=$("#lname").val();
+		var email=$("#email").val();
+		var pwd=$("#pwd").val();
+		if(fn=="")
+		{
+			$("#sb").html("Please Enter your firstname");
+		}
+		
+		else if(ln=="")
+		{
+			$("#sb").html("Please Enter Your Lastname");
+		}
+		else if(email=="")
+		{
+			$("#sb").html("please Enter Your Emailid");
+		}
+		else if(pwd=="")
+		{
+			$("#sb").html("Please Enter Your Password");
+		}
+		else
+		{
+			var obj={email:email,password:pwd,firstName:fn,lastName:ln};
+			var data=JSON.stringify(obj);
+			$.post("http://iltcs.com/api/signup-user",data,function(output){			
+				console.log(output);
+				if(output.status==1)
+				{
+					$("#sb").html(output.message);
+				}
+			});
+		}
+});
+});
+</script>
+<body>
+<form id="msg">
+		<div class="form-group">
+			<label>Firstname:</label>
+			<input type="text" class="form-control" id="fname" placeholder="Please Enter your firstname" />
+		</div>
+		<br><br>
+		<div class="form-group">
+			<label>Lastname:</label>
+			<input type="text" class="form-control" id="lname" placeholder="Please Enter your lastname" />
+		</div>
+		<br><br>
+		<div class="form-group">
+			<label>Email:</label>
+			<input type="email" class="form-control" id="email" placeholder="Please Enter your email" />
+		</div>
+		<br><br>
+		<div class="form-group">
+			<label>Password:</label>
+			<input type="password" class="form-control" id="pwd" placeholder="Please Enter your password" />
+		</div>
+		<br><br>
+		<div class="form-group">
+			
+			<button type="submit"  class="btn btn-primary">Submit</button>
+		</div>
+		
+		<div id="sb"></div>
+		
+	</form>
+</body>	
+</html>

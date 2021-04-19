@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+</body>
+<script>
+
+var element=document.createElement("h1");
+console.log(element);
+var text=document.createTextNode("Ilander Technologies");
+console.log(text);
+element.appendChild(text);
+
+var page=document.body;
+console.log(page);
+page.appendChild(element);
+element.setAttribute("id","msg");
+document.getElementById("msg").style.color="hotpink";
+
+var btn=document.createElement("button");
+var btntext=document.createTextNode("click");
+btn.appendChild(btntext);
+page.appendChild(btn);
+
+btn.addEventListener("click",function(){
+document.getElementById("msg").innerHTML="ILTCS";
+document.getElementById("msg").style.color="red";
+});
+</script>
+
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			//alert();
+			$("span").parentsUntil("ul").css({'color':'red'});
+		});	
+	</script>
+</head>
+<body>
+	<div class="ancestors">
+  <div style="width:500px;">div (great-grandparent)
+  
+    <ul>ul (grandparent)  
+      <li>ILTCS
+			<h2>ILander Technologies<span>Web Designing</span></h2>
+      </li>
+    </ul>   
+  </div>
+	
+</body>
+</html>

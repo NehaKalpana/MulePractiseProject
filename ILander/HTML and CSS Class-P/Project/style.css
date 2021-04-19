@@ -1,0 +1,249 @@
+body
+{
+background-image:url(images/bg1.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+background-position:center;
+
+}
+.body-margin
+{
+margin:100px 100px 0px 100px;
+}
+
+.row
+{
+border:2px solid ;
+overflow:hidden;
+background-color:white;
+padding:2px 0px 0px 0px;
+}
+.col
+{
+width:33.33%;
+float:left;
+}
+.fa-style
+{margin-top:20px;
+	
+}	
+.fa-style-1
+{margin-top:5px;
+margin-left:-70px;
+	
+}	
+
+
+.img1
+{
+width:300px;
+height:100px;
+}
+.c1
+{
+color:red;
+font-size:30px;
+}
+.c2
+{
+color:RGB(4,41,111);
+font-size:30px;
+}
+.c3
+{
+color:RGB(0,115,177);
+font-size:30px;
+}
+.c4
+{
+color:RGB(0,171,220);
+font-size:30px;
+}
+.c5
+{
+color:RGB(217,3,31);
+font-size:30px;
+}
+.c6
+{
+color:RGB(163,56,166);
+font-size:30px;
+}
+.c7
+{
+color:RGB(255,0,0);
+font-size:30px;
+}
+.c8
+{
+color:RGB(54,70,93);
+font-size:30px;
+}
+.c9
+{
+width:20px;
+height:20px;
+}
+.c10
+{
+color:RGB(22,63,119);
+font-size:20px;
+}
+.c11
+{
+color:RGB(22,63,119);
+font-size:20px;
+}
+
+
+
+.mm
+{
+border:2px solid white;
+margin:5px 0px;
+ 
+overflow:hidden;
+}
+.mcol1
+{
+width:15%;
+float:left;
+color:#042e6f;
+background-color:skyblue;
+height: 22px;
+text-align:center;
+}
+.mcol2 
+{
+width:85%;
+float:left;
+background-color:#042e6f;
+color:white;
+}
+
+
+.n1 li
+{
+display:inline;
+color:white;
+padding:10px;
+}
+.n1
+{
+background-color:#042e6f;
+padding:20px;
+}
+
+.bd1
+{
+width:30%;
+float:left;
+background-color:white;
+list-style-image:url(Images/check.jpg);
+
+}
+
+.bdf
+{
+width:70%;
+float:left;
+background-color:white;
+overflow:hidden;
+}
+.bd2
+{
+width:50%;
+float:left;
+}
+
+.bd3
+{
+width:50%;
+float:left;
+}
+
+
+/*footer class*/
+
+.f1
+{
+width:25%;
+float:left;
+}
+
+
+.f5
+{
+padding:25px;
+}
+
+.f
+{
+overflow:hidden;
+background-color:RGB(4,46,111);
+color:white;
+width:100%;
+}
+.g1
+{
+border:1px solid white;
+border-radius: 50%;
+padding: 5px;
+}
+.g2
+{
+border:1px solid white;
+border-radius:50%;
+padding: 5px;
+}
+.g3
+{
+border:1px solid white;
+border-radius: 50%;
+padding: 5px;
+}
+.g4
+{
+border:1px solid white;
+border-radius: 50%;
+padding: 5px;
+}
+.g5
+{
+border:1px solid white;
+border-radius: 50%;
+padding: 5px;
+}
+.g6
+{
+border:1px solid white;
+border-radius: 50%;
+padding: 5px;
+}
+.g7
+{
+border:1px solid white;
+border-radius: 50%;
+padding: 5px;
+}
+.g8
+{
+border:1px solid white;
+border-radius:50%;
+padding: 5px;
+}
+.loc
+{
+	border:1px solid white;
+	padding:6px;
+}
+.mail
+{
+	border:1px solid white;
+	padding:6px;
+}.call
+{
+	border:1px solid white;
+	padding:6px;
+}

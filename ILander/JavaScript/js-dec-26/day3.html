@@ -1,0 +1,190 @@
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<table class="table">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Salary</th>
+        <th>Employee Email</th>
+      </tr>
+    </thead>
+    <tbody id="tbodyId">
+      <!--<tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>-->
+    </tbody>
+  </table>
+</body>
+<script>
+//nested if
+var a=22;
+if(a%2==0)
+{
+	if(a==20)
+	{
+		console.log(a+ " is a even number and it is 20");
+	}
+	else
+	{
+		console.log(a+ " is a even number and it is not 20");
+	}
+}
+else
+{
+	console.log(a+ " is a odd number");
+}
+
+//if else if
+var a=120;
+var b=2670;
+var c=32;
+if(a>b && a>c)
+{
+	console.log("a is the biggest number");
+}
+else if(b>a && b>c)
+{
+	console.log("b is the biggest number");
+}
+else 
+{
+	console.log("c is the biggest number");
+}
+//switch
+var charac='f';
+switch(charac)
+{
+	case 'a': console.log("The character is a");break;
+	case 'b': console.log("The character is b");break;
+	case 'c': console.log("The character is c");break;
+	case 'd': console.log("The character is d");break;
+	case 'e': console.log("The character is e");break;
+	default: console.log("The aplhabet doesn't exist");
+}
+
+//loops
+//while loop
+
+var i=1;
+console.log("The 5 table is");
+while(i<=10)
+{
+	console.log("5 X "+i+" = "+5*i);
+	i++;
+
+}
+//do while
+var j=1;
+do
+{
+	console.log("2 X "+j+" = "+2*j);
+	j++;
+
+}while(j<=10);
+
+//for loop
+var name='Kalpana Pathuri'
+for(var i=0; i<name.length; i++)
+{
+	console.log(name[i]);
+}
+
+//arrays
+
+//two ways of defining arrays
+//first method
+var array=['Real Time Trainers','1 On 1 Training','100% Job Assistance','Personal Training', 'Practical Guidance'];
+//second method 
+var array1= Array('Real Time Trainers','1 On 1 Training','100% Job Assistance','Personal Training', 'Practical Guidance');
+
+
+//array methods
+console.log(array[0]); //first element
+console.log(array1[4]); //last element
+array.push('No Class Room Training'); //adds element to the last
+console.log(array);
+array.pop();
+console.log(array); //removes the last elementa
+
+array.unshift("Resume Preparation"); //adds to the beginning
+console.log(array);
+array.shift(); //removes the first element
+console.log(array);
+
+console.log(array.sort()); //sorts the array in aplhabetical order
+console.log(array.reverse()); //sorts the array in reverse aplhabetical order
+
+var array=['Real Time Trainers','1 On 1 Training','100% Job Assistance','Personal Training', 'Practical Guidance'];
+array.splice(2,0,"98% Job Assistance"); //  replaces and removes array.splice(positon to add,how many places you want to remove,"what do you want to add")
+console.log(array);
+
+delete array[4];
+console.log(array);
+array[4]="dfdsjfs";
+console.log(array);
+
+for(var i=1; i<=array.length; i++)
+{
+	console.log(array[i-1]);
+}
+
+
+//objects 
+var employee_details={employ_id:"16071A0411", employee_name:"Kalpana Pathrui", employee_salary:"10,000",employee_email:"kalpana@gmail.com"};
+console.log(employee_details.employ_id);
+console.log(employee_details.employee_name);
+
+var employee_details_full=[
+{employ_id:"16071A0411", employee_name:"Kalpana Pathrui", employee_salary:"10,000",employee_email:"kalpana@gmail.com"},
+{employ_id:"16071A0412", employee_name:"Pushpa ", employee_salary:"10,0100",employee_email:"Pushpa@gmail.com"},
+{employ_id:"16071A0413", employee_name:"kalyani Pathrui", employee_salary:"10,001",employee_email:"kalyani@gmail.com"},
+{employ_id:"16071A0414", employee_name:"Priyanka Pathrui", employee_salary:"10,000",employee_email:"Priyanka@gmail.com"},
+{employ_id:"16071A0415", employee_name:"Bhargavi Pathrui", employee_salary:"10,000",employee_email:"Bhargavi@gmail.com"},
+{employ_id:"16071A0416", employee_name:"Lekkhana Pathrui", employee_salary:"10,000",employee_email:"Lekkhana@gmail.com"},
+{employ_id:"16071A0417", employee_name:"Pooja Pathrui", employee_salary:"10,000",employee_email:"kalpana@gmail.com"},
+{employ_id:"16071A0418", employee_name:"ridha Pathrui", employee_salary:"10,200",employee_email:"ridha@gmail.com"},
+{employ_id:"16071A0419", employee_name:"Paayal Pathrui", employee_salary:"10,000",employee_email:"Paayal@gmail.com"},		
+]; 
+var tr='';
+var sno=0;
+for (var i=0; i<employee_details_full.length; i++)
+{
+sno++;
+	tr+='<tr><td>'+sno+'</td><td>'+employee_details_full[i].employ_id+'</td><td>'+employee_details_full[i].employee_name+'</td><td>'+employee_details_full[i].employee_salary+'</td><td>'+employee_details_full[i].employee_email+'</td></tr>';
+	console.log(tr);
+}
+
+
+document.getElementById('tbodyId').innerHTML=tr;
+var array=['Real Time Trainers','1 On 1 Training','100% Job Assistance','Personal Training', 'Practical Guidance'];
+
+for(var x in array)
+{
+console.log(array[x]);
+}
+
+</script>
+</html>

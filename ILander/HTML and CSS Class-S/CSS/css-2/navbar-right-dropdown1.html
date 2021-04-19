@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		ul li
+		{
+			display:inline;	
+			padding:10px;
+			color:white;
+		}
+		ul
+		{
+			background-color:gray;
+			padding:18px;
+			overflow:hidden;
+		}
+		.right
+		{
+			float:right;
+		}
+		
+		
+		.dropdown-content a
+		{
+			display:block;
+			text-decoration:none;
+			padding:10px;
+		}
+		.dropdown-content
+		{
+			display:none;
+			background-color:hotpink;
+			position:absolute;
+			padding:20px;
+			left:950px;
+			top:60px;
+		}
+		.dropdown:hover .dropdown-content
+		{
+			display:block;
+			
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<div class="right">
+			<li>ILANDER TECHNOLOGIES</li>
+			<li>HOME</li>
+			<li>ABOUT</li>
+			<li class="dropdown">SERVICES
+				<div class="dropdown-content">
+				<a href="">Web Designing</a>
+				<a href="">Web Development</a>
+				<a href="">Digital Marketing</a>
+				<a href="">Graphic Designing</a>
+				</div>
+			</li>
+			<li>CONTACT</li>		
+			<li>SIGNUP</li>
+			<li>LOGIN</li>
+		</div>
+	</ul>
+</body>
+</html>

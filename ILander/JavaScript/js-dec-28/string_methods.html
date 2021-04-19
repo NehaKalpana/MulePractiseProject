@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+	 var a="hello-hi-hello-hi-hello-hi-hello-hi";
+	 console.log(a.length);
+	//to identify Postions(indexOf,lastIndexOf,search)
+	 console.log("indexOf"+"  "+a.indexOf("hi",7)); //identfies the position of word in entire string
+	 console.log("lastIndexOf"+"  "+a.lastIndexOf("hi")); //identfies the position of last word 
+	console.log("search"+"  "+a.search("hi")); //identfies the position of first word */
+  
+   
+  //Extract Strings(slice(start,end),substr(start,length),substring(start,end))
+	var a="hello-hi-hello-hi-hello-hi";
+    console.log("slice"+"  "+a.slice(6,9));
+    console.log("slice"+"  "+a.slice(-4,-1));
+    console.log("substring"+"  "+a.substring(6,9)); //never accepts the negative values
+    console.log("substr"+"  "+a.substr(6,9));
+	
+	var a="Helllo";
+	console.log(a.toLowerCase());
+	console.log(a.toUpperCase());
+	
+	var str="aBCpbc and abc ABC aBc Abc ABC";
+	console.log(str.charAt(0).toUpperCase());
+	console.log(str[0].toUpperCase());
+    console.log(str.replace(/aBC/ig,"w3schools"));
+    console.log(str.charCodeAt(0));
+	  var res = String.fromCharCode(65);
+	  console.log(res);
+	var str1="abc and abc-all-are and be u and fg and";
+	var arr=str1.split(" ");
+	console.log(arr.length);
+	
+</script>
+
+</body>
+</html>

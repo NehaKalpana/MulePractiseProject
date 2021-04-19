@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<body>
+	<h1 id="msg">ILander Technologies Private Limited</h1>
+	<h2>Website Designing</h2>
+	<p>Does your website have what it takes to catch the attention of a visitor? Is it user friendly in terms of navigation?</p>
+	Full Name: <input id="fname" type="text" value="Priyanka" placeholder="Enter Your Name">
+	<script>
+		$(document).ready(function(){
+			//get Methods
+			var a=$("#msg").text();
+			console.log(a);
+			var b=$("#msg").html();
+			console.log(b);
+			var c=$("#fname").val();
+			console.log(c);
+			var d=$("#fname").attr("placeholder");
+			console.log(d);
+			//set Methods
+			//$("#msg").text("<i>ILander</i> Technologies");
+			$("#msg").html("<i>ILander</i> Technologies");
+			$("#fname").val("ILander Technologies");
+			$("#fname").attr("placeholder","Enter Your Company Name");
+		});
+	</script>
+</body>
+</html>

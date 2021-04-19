@@ -1,0 +1,8 @@
+{
+"games":
+[
+	{"title":"witcher 3", "genre":"RPG","developer":"CD Projejekt RED"},
+	{"title":"MASS Effect 3", "genre":"RPG","developer":"Bioware"},
+	{"title":"Heroes of might & magic 3", "genre":"Turn-based strategy","developer":"New world computing"}
+]
+}

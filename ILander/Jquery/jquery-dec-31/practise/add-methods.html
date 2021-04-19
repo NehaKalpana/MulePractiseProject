@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+		.text1{
+			color:blue;
+			border:2px solid gray;
+		}
+		.text2{
+			color:red;
+		}
+
+</style>
+<script>
+		$(document).ready(function(){
+			$("#btn1").click(function()
+			
+			{
+				$("#msg").append("Best Software Company In Hyderabad");
+			
+			});
+			
+			$("#btn2").click(function()
+			{
+				$("#msg").prepend("Best Software Company in Hyderabad");
+			});
+			
+			$("#btn3").click(function()
+				{
+					$("#msg").after("Best software Company in Hyderabad");
+				});
+			$("#btn4").click(function()
+			{
+					$("#msg").before("Best Software Company in Hyderabad");
+			});
+			
+			
+			
+		});
+	</script>
+</head>
+<body>
+	<h1 id="msg">Ilander Technologies private Limited</h1>
+	<button id="btn1">append</button>
+	<button id="btn2">prepend</button>
+	<button id="btn3">after</button>
+	<button id="btn4">Before</button>
+</body>
+</html>

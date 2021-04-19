@@ -1,0 +1,101 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		.text1{
+			color:blue;
+			border:2px solid gray;
+		}
+		.text2{
+			color:red;
+		}
+	</style>
+	<script>
+		$(document).ready(function()
+		{
+			$("#btn1").click(function()
+			{
+				$("#msg").hide();
+			});
+			
+			$("#btn2").click(function()
+			{
+				$("#msg").show();
+			});
+			$("#btn3").click(function()
+			{
+				$("#msg").toggle();
+			});
+			$("#btn4").click(function()
+			{
+				$("#msg2").slideUp("fast");
+			}
+			);
+			$("#btn5").click(function()
+			{
+				$("#msg2").slideDown(3000);
+			});
+			
+			$("#btn6").click(function()
+			{
+			
+				$("#msg2").slideToggle();
+			});
+			
+			$("#btn7").click(function()
+			{
+				$("#div1").fadeIn();
+			});
+			
+			$("#btn8").click(function()
+			{
+				$("#div1").fadeOut();
+			});
+			
+			$("#btn9").click(function()
+			{
+				$("#div2").fadeToggle();
+			});
+			
+			$("#btn10").click(function()
+			{
+				$("#div3").fadeTo("slow",0.8);
+			});
+			
+			$("#btn11").click(function()
+			{
+			var a=$("#div4").animate({"right":"400px","opacity":"0.5"});
+			console.log(a);
+			});
+			
+			
+		});
+	
+	
+	
+	
+	
+	</script>
+</head>
+<body>
+<h1 id="msg">iLander Technologies Private Limited</h1>
+	<button id="btn1">hide</button>
+	<button id="btn2">show</button>
+	<button id="btn3">toggle</button>
+	<button id="btn4">slideup</button>
+	<button id="btn5">slidedown</button>
+	<button id="btn6">slidetoggle</button>
+	<p id="msg2">Nowadays highly digital world it is a given fact that every company, whether small, medium or large-scale needs an online digital footprint. With the rapid rate of globalisation, customers are no longer Constrained to the immediate neighbourhood or one’s own city. They can come from the far corners of the country and the globe. At iLander Technologies, we help you reach out to your customers through our wide range of technology and design-oriented services.</p><br>
+	<button id="btn7">fadein</button>
+	<button id="btn8">fadeout</button>
+	<button id="btn9">fadetoggle</button>
+	<button id="btn10">fadeto</button>
+	<button id="btn11">animate</button><br><br>
+	<div id="div1" style="background:green;width:200px;height:100px;display:none;"></div><br>
+	<div id="div2" style="background:red;width:200px;height:100px;display:none;"></div><br>
+	<div id="div3" style="background:hotpink;width:200px;height:100px;"></div><br>
+	<div id="div4" style="background-color:yellow;width:200px;height:100px;position:relative;float:right;"></div><br>
+</body>
+	
+	
+	

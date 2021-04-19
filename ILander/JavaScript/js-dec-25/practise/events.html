@@ -1,0 +1,69 @@
+<html>
+<head>
+</head>
+<body id="fname" onload="load()" onscroll="scroll()" style="height:1000px;">
+	<h1 id="msg">Ilander Technologies</h1>
+	<button onclick="clk()">Click</button>
+	<button onclick="dbclk()">doubleclk</button>
+	<div id="msg1"style="background-color:orange;width:300px;height:150px;" onmouseenter="omenter()" onmouseleave="omleave()"></div>
+	<br>
+	Enter Full Name:<input type="text" onkeyup="kup()";><br><br>
+	Enter Emailid:<input type="text" onkeydown="kdown()";><br><br>
+	<form onsubmit="fsubmit()">
+		Enter Full name:<input  id="form1" type="text" onfocus="ifocus()" onblur="iblur()" ><input type="submit">
+	</form>
+<script>
+	//MOUSE EVENTS
+	function clk()
+	{
+		document.getElementById("msg").innerHTML="Ilander Technologies Private Limited";
+		document.getElementById("msg").style.color="hotpink";
+	}
+	function dbclk()
+	{
+		document.getElementById("msg").innerHTML="Best Software Company In Hyderabad";
+		document.getElementById("msg").style.color="red";
+	}
+	function omenter()//onmouseover
+	{
+		document.getElementById("msg1").style.backgroundColor="hotpink";
+	}
+	function omleave() //onmouseout
+	{
+		document.getElementById("msg1").style.backgroundColor="yellow";
+	}
+	//KeyBoard Events
+	function kup()
+	{
+		alert("key is up");
+	}
+	function kdown()
+	{
+	alert("key is down");
+	}
+	//Form Events
+	function fsubmit()
+	{
+	alert("Enter Your FullName");
+	}
+	function ifocus()
+	{
+	document.getElementById("form1").style.backgroundColor="yellow";
+	}
+	function iblur()
+	{
+	document.getElementById("form1").style.backgroundColor="transparent";
+	}
+	//window Events
+	function load()
+	{
+	alert("page is loading....");
+	}
+	function scroll()
+	{
+	document.getElementById("fname").style.backgroundColor="green";
+	}
+	
+</script>
+</body>
+</html>

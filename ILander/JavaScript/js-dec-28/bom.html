@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+	<h1 onclick="page()">ILander Technologies</h1>
+	<p id="msg">1</p>
+	<script>
+		function page(){
+			location.href="http://ilandertech.com/";
+		}
+		var c=document.getElementById("msg").innerHTML;
+		var inc=setInterval(myfun,200);
+		function myfun(){
+			if(c==49)
+			{
+				clearInterval(inc);
+			}
+			c++;
+			document.getElementById("msg").innerHTML=c;
+		}
+	</script>
+</body>
+</html>

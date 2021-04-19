@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Tutorial for Beginners</title>
+		<!--JS Library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<div id='about' style="height:150px;width:300px;background-color:lightgreen; text-align:center;padding:10px;"></div>
+		
+		<button type='button' id='show'>SHOW</button>
+		<button type='button' id='hide'>HIDE</button>
+		<button type='button' id='toggle'>TOGGLE</button>
+		<button type='button' id='getjson'>getjson</button>
+		<button type='button' id='getgame'>get game</button>
+	
+		
+		
+		<!--JS-Jquery-->
+		<script>
+			$(document).ready(function(){
+			
+				$("#about").click(function(){ 
+					$(this).html("You Clicked Me!");
+				});
+				//to change css
+				$("#about").hover(function(){ 
+					$(this).css("background-color","lightblue");
+				});
+				
+				$("#about").mouseleave(function(){ 
+					$(this).css("background-color","lightgreen");
+				});
+				
+				$("#show").click(function(){ 
+					$("#about").show();
+				});
+				
+				$("#hide").click(function(){ 
+					$("#about").hide();
+				});
+				$("#toggle").click(function(){ 
+					$("#about").toggle();
+				});
+				
+				
+				$("#getjson").click(function(){
+				
+					$.ajax({url:"http://iltcs.com/api/get-all-users",success:function(result){
+						$("#about").html(JSON.stringify(result));
+					}
+					});
+				});
+				
+				$("#getgame").click(function(){
+				
+					$.ajax({url:"",success:function(result){
+					var game=result.games[0].title;
+						$("#about").html(game);//witcher 3
+					}
+					});
+				});
+				
+				
+				
+				
+			});
+		</script>
+		
+	</body>
+</html>

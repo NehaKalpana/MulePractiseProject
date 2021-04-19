@@ -1,0 +1,33 @@
+1.Function with paramerter(arguments) with return value
+----------------------------------------------
+called Function                      calling function
+---------------                      ----------------
+function fname(a,b){                    var c=fname(3,4);
+	return z;
+}
+	
+2.Function with paramerter(arguments) without return value
+----------------------------------------------
+called Function                      calling function
+---------------                      ----------------
+function fname(a,b){                  fname(3,4);
+	
+}
+	
+3.Function without paramerter(arguments) without return value
+----------------------------------------------
+called Function                      calling function
+---------------                      ----------------
+function fname(){                   fname();
+	
+}
+	
+4.Function without paramerter(arguments) with return value
+----------------------------------------------
+called Function                      calling function
+---------------                      ----------------
+function fname(){                 	 var c=fname();
+	return z;
+}
+		
+		

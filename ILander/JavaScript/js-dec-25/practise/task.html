@@ -1,0 +1,106 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-lg-1">
+			<div>
+				<img id="msg1" src="img1.jpeg" class="img-fluid" style="width:100px;height:50px;" onmouseenter="omenter1()"onmouseleave=" omleave1()">
+			</div>	
+
+			<div>
+				<img id="msg2" src="img2.jpeg" class="img-fluid" style="width:100px;height:50px;" onmouseenter="omenter2()"onmouseleave="omleave2()">
+			</div>
+				
+			<div>
+				<img id="msg3" src="img3.jpeg" class="img-fluid" style="width:100px;height:50px;" onmouseenter="omenter3()"onmouseleave="omleave3()" >
+			</div>
+			<div>
+				<img id="msg4" src="img4.jpeg" class="img-fluid" style="width:100px;height:50px;" onmouseenter="omenter4()"onmouseleave="omleave4()" >
+			</div>
+			<div>
+				<img id="msg5" src="img5.jpeg"  class="img-fluid" style="width:100px;height:50px;" onmouseenter="omenter5()"onmouseleave="omleave5()" >
+			</div>
+			
+	</div>
+	<div class="col-lg-6">
+	<div>
+		<img id="msg" src="img1.jpeg" class="img-fluid" style="width:500px;height:500px;">	
+	</div>
+	</div>
+</div>
+</div>	
+<script>
+	function omenter1()
+	{
+		document.getElementById("msg1").style.border="2px solid blue";
+		document.getElementById("msg").src="img1.jpeg";
+		
+	}
+	function omleave1()
+	{
+		
+		document.getElementById("msg1").style.border="none";
+		document.getElementById("msg1).src="img1.jpeg";
+	}
+	
+	function omenter2()
+	{
+		document.getElementById("msg2").style.border="2px solid blue";
+		document.getElementById("msg").src="img2.jpeg";
+	}
+	function omleave2()
+	{
+		document.getElementById("msg2").style.border="none";
+		document.getElementById("msg1").src="img1.jpeg";
+	}
+	
+	function omenter3()
+	{
+		document.getElementById("msg3").style.border="2px solid blue";
+		document.getElementById("msg").src="img3.jpeg";
+		
+	}
+	function omleave3()
+	{
+		document.getElementById("msg3").style.border="none";
+		document.getElementById("msg").src="img1.jpeg";
+	}
+	
+	function omenter4()
+	{
+		document.getElementById("msg4").style.border="2px solid blue";
+		document.getElementById("msg").src="img4.jpeg";
+		
+	}
+	function omleave4()
+	{
+		document.getElementById("msg4").style.border="none";
+		document.getElementById("msg").src="img1.jpeg";
+	}
+	
+	function omenter5()
+	{
+		document.getElementById("msg5").style.border="2px solid blue";
+		document.getElementById("msg").src="img5.jpeg";
+		
+	}
+	function omleave5()
+	{
+		document.getElementById("msg5").style.border="none";
+		document.getElementById("msg").src="img1.jpeg";
+
+	}
+  
+
+	
+</script>
+</body>
+</html>
