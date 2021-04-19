@@ -2,7 +2,7 @@
 <head>
 </head>
 <body>
-<h1>This is my First Heading</h1>
-<p>This is my First Paragraph</p>
+<h1 style="color:'red';backgroundcolor:'green'">This is my First Heading</h1>
+<p style="color:'red';backgroundcolor:'green'">This is my First Paragraph</p>
 </body>
 </html>
